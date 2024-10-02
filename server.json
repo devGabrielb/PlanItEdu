@@ -1,56 +1,243 @@
 {
-  "produtos": [
+  "completions": [
     {
-      "id": 1,
-      "nome": "Hambúrguer",
-      "descricao": "Pão, bife de hambúrguer 90g, salada e batata.",
-      "preco": 8.5,
-      "categoria_id": 1
+      "userId": "01",
+      "sections": [
+        {
+          "id": "01",
+          "Title": "",
+          "fields": [
+            {
+              "label": "Série",
+              "type": "text",
+              "content": "<p style='font-size:16px; line-height:1.5;'>Ensino Superior - Curso de Engenharia de Software</p>",
+              "style": "p-2 w-30 min-h-10 border"
+            },
+            {
+              "label": "Disciplina",
+              "type": "text",
+              "content": "<p style='font-size:16px; line-height:1.5;'>Computação em Nuvem</p>",
+              "style": "p-2 w-30 min-h-10 border"
+            },
+            {
+              "label": "Data",
+              "type": "text",
+              "content": "<p style='font-size:16px; line-height:1.5;'>18/09/2024</p>",
+              "style": "p-2 w-30 min-h-10 border"
+            }
+          ],
+          "style": "grid grid-cols-3 gap-3"
+        },
+        {
+          "id": "02",
+          "Title": "",
+          "fields": [
+            {
+              "label": "Tópico",
+              "type": "text",
+              "content": "<p style='font-size:16px; line-height:1.5;'>Introdução ao Kubernetes</p>",
+              "style": "p-2 w-30 min-h-10 border"
+            },
+            {
+              "label": "Aula n",
+              "type": "text",
+              "content": "<p style='font-size:16px; line-height:1.5;'>1</p>",
+              "style": "p-2 w-30 min-h-10 border"
+            }
+          ],
+          "style": "mt-3 grid grid-cols-2 gap-3"
+        },
+        {
+          "id": "03",
+          "Title": "",
+          "fields": [
+            {
+              "label": "Foco e objetivos da aula",
+              "type": "text",
+              "content": "<p style='font-size:16px; line-height:1.8;'>Apresentar o conceito de orquestração de containers, a arquitetura do Kubernetes e sua importância no gerenciamento de aplicações em nuvem.</p>",
+              "style": "p-2 w-30 min-h-36 border"
+            }
+          ],
+          "style": "mt-3 grid grid-cols-1 gap-3"
+        },
+        {
+          "id": "04",
+          "Title": "",
+          "fields": [
+            {
+              "label": "Materiais necessários",
+              "type": "textArea",
+              "content": "<p style='font-size:16px; line-height:1.8;'>Slides de apresentação, acesso a um cluster Kubernetes (Minikube ou EKS), terminal com kubectl instalado.</p>",
+              "style": "p-2 w-30 min-h-36 border"
+            },
+            {
+              "label": "Objetivos de aprendizagem",
+              "type": "textArea",
+              "content": "<p style='font-size:16px; line-height:1.8;'>Ao final da aula, os alunos serão capazes de: 1. Entender a arquitetura básica do Kubernetes; 2. Compreender os principais componentes (pods, services, deployments); 3. Realizar o deploy de uma aplicação simples em um cluster Kubernetes.</p>",
+              "style": "p-2 w-30 min-h-36 border"
+            }
+          ],
+          "style": "mt-3 grid grid-cols-2 gap-3"
+        },
+        {
+          "id": "05",
+          "Title": "",
+          "fields": [
+            {
+              "label": "Estrutura / Atividade",
+              "type": "textArea",
+              "content": "<p style='font-size:16px; line-height:1.8;'>1. Introdução ao Kubernetes (20 min) - Conceitos e Arquitetura.<br>2. Demonstração prática (30 min) - Deploy de uma aplicação em um cluster Kubernetes usando kubectl.<br>3. Atividade em grupo (40 min) - Configurar um deployment e expor um serviço. Cada grupo terá que criar uma aplicação simples e fazer o deploy no Kubernetes.</p>",
+              "style": "p-2 w-30 min-h-80 border"
+            }
+          ],
+          "style": "mt-3 grid grid-cols-1"
+        },
+        {
+          "id": "06",
+          "Title": "",
+          "fields": [
+            {
+              "label": "Avaliação",
+              "type": "textArea",
+              "content": "<p style='font-size:16px; line-height:1.8;'>A avaliação será baseada na participação nas atividades práticas, compreensão dos conceitos abordados e um pequeno quiz ao final da aula.</p>",
+              "style": "p-2 w-30 min-h-36 border"
+            }
+          ],
+          "style": "mt-3 grid grid-cols-1"
+        }
+      ],
+      "id": "1809"
     },
     {
-      "id": 2,
-      "nome": "X-Búrguer",
-      "descricao": "Pão, bife de hambúrguer 90g, 1 fatia de queijo, salada e batata.",
-      "preco": 10.5,
-      "categoria_id": 1
-    },
-    {
-      "id": 3,
-      "nome": "X-Bacon",
-      "descricao": "Pão, bife de hambúrguer 90g, 1 fatia de queijo, 2 fatia de bacon, salada e batata.",
-      "preco": 12.5,
-      "categoria_id": 1
-    },
-    {
-      "id": 4,
-      "nome": "X-Tudo",
-      "descricao": "Pão, 2 bifes de hambúrguer 90g, 2 fatias de queijo, 4 fatias de bacon, salada e batata.",
-      "preco": 14.5,
-      "categoria_id": 1
-    },
-    {
-      "id": 5,
-      "nome": "Coca cola 350ml",
-      "descricao": "",
-      "preco": 5.5,
-      "categoria_id": 2
-    },
-    {
-      "id": 6,
-      "nome": "Coca cola 600ml",
-      "descricao": "",
-      "preco": 7.5,
-      "categoria_id": 2
+      "id": "7331",
+      "templateId": 1,
+      "prompt": "sdsfdf"
     }
   ],
-  "categorias": [
+  "templates": [
     {
-      "id": 1,
-      "nome": "Hambúrgueres"
+      "id": "1",
+      "title": "Template 1",
+      "description": "Descrição do Template 1",
+      "imageUrl": "https://marketplace.canva.com/EAEXR3FUBBU/1/0/1131w/canva-em-branco-formato-para-impress%C3%A3o-simples-plano-de-aula-ODcufq3qCjA.jpg",
+      "code": {
+        "sections": [
+          {
+            "id": "",
+            "Title": "",
+            "fields": [
+              {
+                "label": "serie",
+                "type": "text",
+                "style": "w-30 h-10 bg-yellow-100"
+              },
+              {
+                "label": "serie",
+                "type": "text",
+                "style": "w-30 h-10 bg-yellow-100"
+              },
+              {
+                "label": "serie",
+                "type": "text",
+                "style": "w-30 h-10 bg-yellow-100"
+              }
+            ],
+            "style": "grid grid-cols-3 gap-3"
+          },
+          {
+            "id": "",
+            "Title": "",
+            "fields": [
+              {
+                "label": "serie",
+                "type": "text",
+                "style": "w-full h-10 bg-yellow-100"
+              },
+              {
+                "label": "serie",
+                "type": "text",
+                "style": "w-full h-10 bg-yellow-100"
+              }
+            ],
+            "style": "mt-3 grid grid-cols-2 gap-3"
+          },
+          {
+            "fields": [
+              {
+                "label": "serie",
+                "type": "textArea",
+                "style": "w-30 h-10 bg-blue-500"
+              }
+            ],
+            "style": "mt-3 grid grid-cols-2 gap-3"
+          },
+          {
+            "fields": [
+              {
+                "label": "serie",
+                "type": "textArea",
+                "style": "style"
+              },
+              {
+                "label": "serie",
+                "type": "textArea",
+                "style": "style"
+              }
+            ],
+            "style": "mt-3 grid grid-cols-2 gap-3"
+          },
+          {
+            "fields": [
+              {
+                "label": "serie",
+                "type": "textArea",
+                "style": "style"
+              }
+            ],
+            "style": "mt-3 grid grid-cols-1 gap-3"
+          },
+          {
+            "fields": [
+              {
+                "label": "serie",
+                "type": "textArea",
+                "style": "style"
+              }
+            ],
+            "style": "mt-3 grid grid-cols-1 gap-3"
+          }
+        ]
+      }
     },
     {
-      "id": 2,
-      "nome": "Refrigerantes"
+      "id": "2",
+      "title": "Template 2",
+      "description": "Descrição do Template 2",
+      "imageUrl": "https://oespacoeducar.com.br/wp-content/uploads/2021/03/Acampamento-Em-Branco-Plano-de-Aula-1.jpg"
+    },
+    {
+      "id": "3",
+      "title": "Template 3",
+      "description": "Descrição do Template 3",
+      "imageUrl": "https://marketplace.canva.com/EAEXR3FUBBU/1/0/1131w/canva-em-branco-formato-para-impress%C3%A3o-simples-plano-de-aula-ODcufq3qCjA.jpg"
+    },
+    {
+      "id": "4",
+      "title": "Template 4",
+      "description": "Descrição do Template 4",
+      "imageUrl": "https://oespacoeducar.com.br/wp-content/uploads/2021/03/Acampamento-Em-Branco-Plano-de-Aula-1.jpg"
+    },
+    {
+      "id": "5",
+      "title": "Template 5",
+      "description": "Descrição do Template 5",
+      "imageUrl": "https://marketplace.canva.com/EAEXR3FUBBU/1/0/1131w/canva-em-branco-formato-para-impress%C3%A3o-simples-plano-de-aula-ODcufq3qCjA.jpg"
+    },
+    {
+      "id": "6",
+      "title": "Template 6",
+      "description": "Descrição do Template 6",
+      "imageUrl": "https://oespacoeducar.com.br/wp-content/uploads/2021/03/Acampamento-Em-Branco-Plano-de-Aula-1.jpg"
     }
   ]
 }

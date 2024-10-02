@@ -1,55 +1,32 @@
 "use client";
-import Icon from "@/components/icon";
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
   DialogContent,
-  DialogDescription,
   DialogHeader,
   DialogTitle,
+  DialogTrigger,
 } from "@/components/ui/dialog";
-import { Input } from "@/components/ui/input";
-import { useRouter } from "next/navigation";
-import { useState } from "react";
+import { FC, ReactNode, useState } from "react";
+import LessonPlanBuilder from "./lessonPlanBuilder/lessonPlanBuilder";
 
-const AddPlan = () => {
+interface AddPlanProps {
+  children?: ReactNode;
+}
+const AddPlan: FC<AddPlanProps> = ({ children }) => {
   const [openDialog, setOpenDialog] = useState(false);
-  const router = useRouter();
 
   return (
     <>
-      <div className="text-bold">
-        <div
-          className="bg-white p-14 py-24 border 
-        items-center flex 
-        justify-center
-        rounded-lg
-        min-w-[210px]
-        h-[280px]
-        hover:scale-105 transition-all hover:shadow-md
-        cursor-pointer border-dotted"
-          onClick={() => setOpenDialog(true)}
-        >
-          <Icon name="file-plus" />
-        </div>
-      </div>
       <Dialog onOpenChange={setOpenDialog} open={openDialog}>
-        <DialogContent>
+        <DialogTrigger asChild>
+          <Button variant="default">{children}Novo plano</Button>
+        </DialogTrigger>
+        <DialogContent className="h-[80%] max-w-[50%]">
           <DialogHeader>
             <DialogTitle>Crie um novo plano de aula</DialogTitle>
-            <DialogDescription>
-              <p>Adicione o titulo para o seu plano de aula</p>
-              <Input
-                className="my-2"
-                placeholder="Ex.Plano de aula Portugues 2 ano"
-                onChange={(e) => {}}
-              />
-            </DialogDescription>
-            <div className="flex justify-end gap-5">
-              <Button variant="ghost">Cancelar</Button>
-              <Button onClick={() => router.push("/plan/123")}>Criar</Button>
-            </div>
           </DialogHeader>
+          <LessonPlanBuilder />
         </DialogContent>
       </Dialog>
     </>
